@@ -26,6 +26,7 @@
   - debug: var=virt_net_out
   - name: Get libvirt interfaces
     virt_net:
+      name: default
       command: facts
   - name: Get routing rules, IPv4
     command: ip -j rule
